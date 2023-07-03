@@ -1,0 +1,19 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    
+  }
+  
+  .contact-us {
+    text-align: center;
+    
+  }
+  
+  .contact-details {
+    text-align: center;
+  }
+  .footer{
+    margin-top: 37vh;
+  }

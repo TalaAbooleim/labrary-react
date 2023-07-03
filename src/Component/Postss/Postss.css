@@ -1,0 +1,29 @@
+.post-container {
+    max-width: 100vw;
+    margin: auto;
+    
+  }
+  
+  .post-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    
+  }
+  
+  .post-card {
+    border: 1px solid black;
+    padding: 10px;
+    margin-left: 50px;
+    background-color:whitesmoke;
+    margin-right: 50px;
+  }
+  .post{
+    text-align: center;
+    padding-bottom: 20px;
+    
+  }
+  .imgg{
+    width:20px;
+    height:20px;
+  }
