@@ -210,9 +210,22 @@
   ],
   "products": [
     {
-      "name": "kjfjg",
-      "post": "lflllf",
+      "name": "tala abooleim",
+      "post": "this is amazing",
+      "book": "Computer Science for Kids: A Storytelling Approach",
       "id": 1
+    },
+    {
+      "name": "MOHAMMAD ABUOLIEM",
+      "post": "i give that 5 ✨ ",
+      "book": "Introduction to the Theory of Computation\" by Michael Sipser",
+      "id": 2
+    },
+    {
+      "name": "Ahmmed abbolaim",
+      "post": "woow",
+      "book": "Structure and Interpretation of Computer Programs",
+      "id": 3
     }
   ],
   "categories": [
@@ -381,6 +394,46 @@
     {
       "name": "Book 20",
       "image": "https://images-na.ssl-images-amazon.com/images/I/81ai-jS33lL._AC_UL160_SR160,160_.jpg"
+    },
+    {
+      "name": "Book 21",
+      "image": "https://m.media-amazon.com/images/I/71FVPTIoVgL._AC_UY327_QL65_.jpg"
+    },
+    {
+      "name": "Book 22",
+      "image": "https://m.media-amazon.com/images/I/41temYGJxgL._AC_UY327_QL65_.jpg"
+    },
+    {
+      "name": "Book 23",
+      "image": "https://m.media-amazon.com/images/I/61fFh20AhQL._AC_UY327_QL65_.jpg"
+    },
+    {
+      "name": "Book 24",
+      "image": "https://m.media-amazon.com/images/I/61JmEmSYtIL._AC_UY327_QL65_.jpg"
+    },
+    {
+      "name": "Book 25",
+      "image": "https://m.media-amazon.com/images/I/81hwF60vBCL._AC_UY327_QL65_.jpg"
+    },
+    {
+      "name": "Book 26",
+      "image": "https://m.media-amazon.com/images/I/51V1r3+4tIL._AC_UY327_FMwebp_QL65_.jpg"
+    },
+    {
+      "name": "Book 27",
+      "image": "https://m.media-amazon.com/images/I/7102H4YF1tL._AC_UY327_FMwebp_QL65_.jpg"
+    },
+    {
+      "name": "Book 28",
+      "image": "https://m.media-amazon.com/images/I/51VbUiVAa8L._AC_UY327_FMwebp_QL65_.jpg"
+    },
+    {
+      "name": "Book 29",
+      "image": "https://m.media-amazon.com/images/I/71bBTEurwoL._AC_UY327_FMwebp_QL65_.jpg"
+    },
+    {
+      "name": "Book 30",
+      "image": "https://m.media-amazon.com/images/I/71s5yQ81-yS._AC_UY327_QL65_.jpg"
     }
   ]
 }

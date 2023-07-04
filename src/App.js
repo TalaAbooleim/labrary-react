@@ -1,6 +1,8 @@
 
+
 import './App.css';
 import Books from './Component/Books/Books';
+import Children from './Component/Children/Children';
 import Signup from './Component/Signup/Signup';
 
 
@@ -33,7 +35,7 @@ function App() {
           <Route path="/Signin" element={<Signin />} />
           <Route path="/Signup" element={<Signup />} />
           <Route path="/Books" element={< Books/>} />
-
+          <Route path="/Children" element={< Children/>} />
           <Route path="/Home" element={<Home/>} />
           <Route path="/Postss" element={<Postss/>} />
           <Route path="/About" element={< About/>} />

@@ -387,6 +387,7 @@ function Postss() {
   const [name, setName] = useState('');
   const [post, setPost] = useState('');
   const [editIndex, setEditIndex] = useState(-1);
+  const [book, setbook] = useState([]);
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
@@ -424,13 +425,14 @@ function Postss() {
       }
     } else {
       // Create new post
-      const newPost = { name, post };
+      const newPost = { name, post,book };
 
       try {
         await axios.post('http://localhost:3001/products', newPost);
         setPosts([...posts, newPost]);
         setName('');
         setPost('');
+        setbook('');
         console.log('Post saved successfully');
       } catch (error) {
         console.error('Error saving post:', error);
@@ -438,23 +440,23 @@ function Postss() {
     }
   };
 
-  const handleEdit = (index) => {
-    setName(posts[index].name);
-    setPost(posts[index].post);
-    setEditIndex(index);
-  };
+  // const handleEdit = (index) => {
+  //   setName(posts[index].name);
+  //   setPost(posts[index].post);
+  //   setEditIndex(index);
+  // };
 
-  const handleDelete = async (index) => {
-    try {
-      await axios.delete(`http://localhost:3001/products/${posts[index].id}`);
-      const updatedPosts = [...posts];
-      updatedPosts.splice(index, 1);
-      setPosts(updatedPosts);
-      console.log('Post deleted successfully');
-    } catch (error) {
-      console.error('Error deleting post:', error);
-    }
-  };
+  // const handleDelete = async (index) => {
+  //   try {
+  //     await axios.delete(`http://localhost:3001/products/${posts[index].id}`);
+  //     const updatedPosts = [...posts];
+  //     updatedPosts.splice(index, 1);
+  //     setPosts(updatedPosts);
+  //     console.log('Post deleted successfully');
+  //   } catch (error) {
+  //     console.error('Error deleting post:', error);
+  //   }
+  // };
 
   return (
     <div className="post-container">
@@ -467,6 +469,14 @@ function Postss() {
             id="name"
             value={name}
             onChange={(e) => setName(e.target.value)}
+          />
+        </div>
+        <div className="post">
+          <label htmlFor="post">Name the Book:</label>
+          <textarea
+            id="book"
+            value={book}
+            onChange={(e) => setbook(e.target.value)}
           />
         </div>
         <div className="post">
@@ -494,13 +504,16 @@ function Postss() {
               </div>
               <div className="name-time">
                 <h3>{post.name}</h3>
+                <p>{post.book}</p>
                 <p>{post.time}</p>
               </div>
             </div>
+            
             <p>{post.post}</p>
+            
             <div>
-              <button onClick={() => handleEdit(index)}>Edit</button>
-              <button onClick={() => handleDelete(index)}>Delete</button>
+              {/* <button onClick={() => handleEdit(index)}>Edit</button> */}
+              {/* <button onClick={() => handleDelete(index)}>Delete</button> */}
             </div>
           </div>
         ))}
