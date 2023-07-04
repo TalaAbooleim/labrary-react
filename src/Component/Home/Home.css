@@ -1,30 +1,55 @@
 .book-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-gap: 20px;
-  }
-  
-  .book-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .book-card img {
-    width: 100%;
-    max-height: 300px;
-    object-fit: cover;
-  }
-  
-  .book-card h2 {
-    margin-top: 10px;
-  }
-  
-  .book-card p {
-    margin-top: 5px;
-    color: gray;
-  }
-img{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+  justify-items: center;
+}
+
+.book-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+}
+
+.book-card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.book-card p {
+  font-size: 1rem;
+  color: #888;
+}
+
+.imgcur {
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width:20px;
+  height:30px;
+}
+
+.page-item {
+  border: 1px solid #ccc;
+  background-color: #f2f2f2;
+  color: #333;
+  padding: 5px 10px;
   cursor: pointer;
+  margin-right: 5px;
+}
+
+.page-item:hover {
+  background-color: #e0e0e0;
+}
+
+.page-item.active {
+  background-color: #333;
+  color: #fff;
 }
